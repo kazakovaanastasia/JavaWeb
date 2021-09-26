@@ -11,14 +11,14 @@
 
 <p th:text="'Hello, ' + '!'" />
 <div class ="container mt-5 mb-5">
-    <h1>EDIIIIT</h1>
+    <h1>Редактирование</h1>
     <div th:each="el : ${post}" >
 
     <form method ="post">
-        <input type = "text" th:value="${el.title}" name ="title" placeholder = "Put name" class = "form-control"><br>
-        <input type = "text" th:value="${el.anons}" name ="anons" placeholder = "Put anons" class = "form-control"><br>
-        <textarea name ="full_text" th:text="${el.full_text}"placeholder = "Put full text" class = "form-control"/><br>
-        <button type = "submit" class ="btn btn-success">Refresh</button>
+        <input type = "text" th:value="${el.title}" name ="title" placeholder = "Название" class = "form-control"><br>
+        <input type = "text" th:value="${el.anons}" name ="anons" placeholder = "Анонс" class = "form-control"><br>
+        <textarea name ="full_text" th:text="${el.full_text}"placeholder = "Дорогой дневник" class = "form-control"/><br>
+        <button type = "submit" class ="btn btn-success">Изменить запись</button>
 
 
     </form>

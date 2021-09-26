@@ -9,13 +9,12 @@
 
     <header th:insert="blocks/header :: header"></header>
 
-    <p th:text="'Hello, ' + '!'" />
     <div class ="container mt-5">
-        <h1>Blogers</h1>
+        <h1>Записи в дневнике</h1>
         <div th:each="el : ${posts}" class = "alert alert-info mt-2">
             <h3 th:text="${el.title}"/>
             <p th:text="${el.anons}"/>
-            <a th:href="'/blog/' + ${el.id}" class = "btn btn-warning">More</a>
+            <a th:href="'/blog/' + ${el.id}" class = "btn btn-warning">Подробнее</a>
         </div>
     </div>
         <div th:insert="blocks/footer :: footer"></div>
