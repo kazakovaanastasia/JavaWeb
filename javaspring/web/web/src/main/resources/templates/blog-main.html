@@ -17,7 +17,13 @@
             <a th:href="'/blog/' + ${el.id}" class = "btn btn-warning">Подробнее</a>
         </div>
     </div>
-        <div th:insert="blocks/footer :: footer"></div>
 
+    <center>
+    <img src="" th:src="@{duck.jpg}" alt ="" />
+    <p>Богатство принадлежит не тому, кто владеет им, а тому, кто умеет получать от него удовольствие.</p>
+    <p><b>  Бенджамин Франклин (Benjamin Franklin)</b></p><br></br>
+
+    <div th:insert="blocks/footer :: footer"></div>
+    </center>
 </body>
 </html>

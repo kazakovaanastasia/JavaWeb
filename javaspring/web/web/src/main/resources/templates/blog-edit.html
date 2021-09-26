@@ -9,7 +9,6 @@
 
 <header th:insert="blocks/header :: header"></header>
 
-<p th:text="'Hello, ' + '!'" />
 <div class ="container mt-5 mb-5">
     <h1>Редактирование</h1>
     <div th:each="el : ${post}" >
@@ -24,7 +23,15 @@
     </form>
     </div>
 </div>
+
+<center>
+
+<img src="" th:src="@{tri.png}" alt ="" />
+<p>Инновация отличает лидера от последователя.</p>
+<p><b>  Стив Джобс (Steve Jobs)</b></p><br></br>
+
 <div th:insert="blocks/footer :: footer"></div>
+</center>
 
 </body>
 </html>

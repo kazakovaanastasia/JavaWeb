@@ -10,10 +10,10 @@ public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long id;
+    private Long id;
 
-    public String title, anons, full_text;
-    public int views;
+    private String title, anons, full_text;
+    private int views;
 
     public Long getId(){
         return id;
